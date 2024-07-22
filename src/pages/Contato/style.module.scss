@@ -1,0 +1,80 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    padding: 16.34vh 9%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    background-color: #EAECF0; //gray 3
+
+    @media (max-width: 950px) {
+        flex-direction: column;
+        padding: 10vh 9%;
+    }
+
+    label {
+        font-size: 60px;
+        font-weight: 700;
+
+        color: #101828; //gray 6
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 400;
+
+        color: #475467; //gray 5
+
+        strong {
+            font-weight: 600;
+        }
+    }
+
+
+    .description {
+        width: 50%;
+        height: auto; //hug content
+
+        margin-right: 2rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+        @media (max-width: 950px) {
+            width: 100%;;
+        }
+
+        .contacts {
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;                
+            flex-direction: column;
+
+            > label {
+                margin: 0;
+
+                font-size: 24px;
+                font-weight: 400;
+
+                color: #101828; //gray 6
+            }
+        }
+    }
+
+    .carousel_container{
+        width: 50%;
+        height: auto; //hug content
+        @media (max-width: 950px) {
+            width: 100%;
+        }
+    }
+
+
+}

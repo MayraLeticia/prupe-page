@@ -1,0 +1,23 @@
+.next_button, .prev_button{
+    top: 18%;
+
+    position: absolute;
+    z-index: 10;
+    width: 6rem;
+    height: 6rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.next_button {
+    background-image: url('../../../public/assets/icons/arrow-right.png');
+    right: -1.5rem;
+}
+
+.prev_button {
+    background-image: url('../../../public/assets/icons/arrow-left.png');
+    left: -1.5rem;
+}
