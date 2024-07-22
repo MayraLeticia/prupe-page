@@ -9,6 +9,10 @@
 
     align-items: center;
 
+    @media (max-width: 950px) {
+        padding: 8vh 9%;
+    }
+
     .container_header {
         display: flex;
         flex-direction: row;
@@ -30,6 +34,7 @@
             @media (max-width: 950px) {
                 width: 100%;
                 padding-left: 0rem;
+                justify-content: center;
             }
 
             label {
@@ -86,6 +91,11 @@
             
             font-size: 20px;
             font-weight: 700;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
         }
     }
 }
@@ -124,7 +134,7 @@
 
 .slide.active {
     border: solid;
-        border-color: #34D399;
+    border-color: #34D399;
 }
 
 .container_collapse {

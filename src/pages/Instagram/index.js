@@ -60,7 +60,7 @@ const Instagram = () => {
         <div id="instagram" className={styles.container}> 
             <label>Instagram</label>
             <div className={styles.carousel}>
-                <Carrossel breakpoints={breakpoints} slidesPerView={7} spaceBetween={10} arrows={true} navigators={false}>
+                <Carrossel breakpoints={breakpoints} slidesPerView={5} spaceBetween={10} arrows={true} navigators={false}>
                     {itens.map((item, index) => (
                         <div key={index} className={styles.image_container}>
                             <a>

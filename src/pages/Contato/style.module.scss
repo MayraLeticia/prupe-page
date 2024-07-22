@@ -13,7 +13,7 @@
 
     @media (max-width: 950px) {
         flex-direction: column;
-        padding: 10vh 9%;
+        padding: 8vh 9%;
     }
 
     label {
@@ -47,7 +47,9 @@
         flex-direction: column;
 
         @media (max-width: 950px) {
-            width: 100%;;
+            margin-right: 0;
+
+            width: 100%;
         }
 
         .contacts {

@@ -10,8 +10,12 @@
     align-items: center;
     flex-direction: column;
 
+    background-color: #F2F4F7;
+
     @media (max-width: 950px) {
-        padding: 8vh 9%;
+        height: 85vh;
+
+        padding: 20vh 9%;
     }
 
     label {
@@ -29,9 +33,6 @@
             width: 300px;
             height: auto;
         }
-
-        .next_button, .prev_button {
-            top:50%;
-        }
     }
 }
+
