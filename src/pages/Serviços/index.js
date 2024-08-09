@@ -109,60 +109,62 @@ const itens = [
         ]
     },
     {
-        title: '8',
-        image: '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-        collapseTitle: 'Podologia Geriatrica',
-        collapseContent: 'Descrição detalhada do tratamento 1.',
+        title: 'Doenças de Unha',
+        image: '/assets/pagina_serviços/doencas_de_unha/img_doencas_de_unha_1.svg',
+        collapseTitle: 'Doenças de Unha',
+        collapseContent: 'Doenças de UnhaDentre as doenças de unha a mais comum é a onicomicose, infecção causada por fungos. As unhas dos pés são mais afetadas por oferecem aos fungos um ambiente propício para sua proliferação.\n São muitos os antifúngicos utilizados hoje para combater esta infecção, mas juntamente com a medicação, o trabalho do Podólogo se torna imprescindível para o sucesso do tratamento.\n Para combater este problema, além do procedimento de remoção da área afetada, oferecemos tratamentos com fototerapia, com o uso do laser de baixa potência, ozônio através do aparelho de alta frequência e produtos fitoterápicos.',
         collapseImages: [
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-2.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-3.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-4.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-5.png'
+            '/assets/pagina_serviços/doencas_de_unha/img_doencas_de_unha_1.svg',
+            '/assets/pagina_serviços/doencas_de_unha/img_doencas_de_unha_2.svg',
+            '/assets/pagina_serviços/doencas_de_unha/img_doencas_de_unha_3.svg',
+            '/assets/pagina_serviços/doencas_de_unha/img_doencas_de_unha_4.svg',
+            '/assets/pagina_serviços/doencas_de_unha/img_doencas_de_unha_5.svg',
+            '/assets/pagina_serviços/doencas_de_unha/img_doencas_de_unha_6.svg'
         ]
     },
     {
-        title: '9',
-        image: '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-        collapseTitle: 'Podologia Geriatrica',
-        collapseContent: 'Descrição detalhada do tratamento 1.',
+        title: 'Órteses',
+        image: '/assets/pagina_serviços/orteses/img_orteses_1.svg',
+        collapseTitle: 'Órteses',
+        collapseContent: 'Fazemos correção de unha com vários tipos de órteses.\n As deformidades nas unhas podem ser congênitas ou adquiridas. As causas mais comuns são cortes errados, calçados inadequados e alterações posturais.\n Trabalhamos com órteses de resina, com fibra de memória molecular, órteses elásticas e muitas outras técnicas para aperfeiçoar a anatomia da unha, melhorando as deformidades e desconfortos.',
         collapseImages: [
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-2.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-3.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-4.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-5.png'
+            '/assets/pagina_serviços/orteses/img_orteses_1.svg',
+            '/assets/pagina_serviços/orteses/img_orteses_2.svg',
+            '/assets/pagina_serviços/orteses/img_orteses_3.svg',
         ]
     },
     {
-        title: '10',
-        image: '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-        collapseTitle: 'Podologia Geriatrica',
-        collapseContent: 'Descrição detalhada do tratamento 1.',
+        title: 'Acupuntura Agragada à Podologia',
+        image: '/assets/pagina_serviços/acupuntura_agregada_a_podologia/img_acupuntura_agragada_a_podologia_2.svg',
+        collapseTitle: 'Acupuntura Agragada à Podologia',
+        collapseContent: 'Quando resolvemos agregar a Acupuntura à Podologia, não imaginávamos a dimensão, o leque de benefícios que nos traria esta associação. Hoje utilizamos as técnicas da Medicina Tradicional Chinesa (MTC) em vários procedimentos podológicos, como, para o alívio da dor nos tratamentos de unha encravada, remoção de calos, para a diminuição do processo inflamatório em fascite plantar e esporão de calcâneo, lesões esportivas, nas onicomicoses, para acelerar o processo de cicatrização em casos de feridas complexas.\n Por isso criamos uma página inteirinha com todas as terapias da MTC que aplicamos.',
         collapseImages: [
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-2.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-3.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-4.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-5.png'
+            '/assets/pagina_serviços/acupuntura_agregada_a_podologia/img_acupuntura_agragada_a_podologia_1.svg',
+            '/assets/pagina_serviços/acupuntura_agregada_a_podologia/img_acupuntura_agragada_a_podologia_2.svg',
+            '/assets/pagina_serviços/acupuntura_agregada_a_podologia/img_acupuntura_agragada_a_podologia_3.svg',
+            '/assets/pagina_serviços/acupuntura_agregada_a_podologia/img_acupuntura_agragada_a_podologia_4.svg',
+            '/assets/pagina_serviços/acupuntura_agregada_a_podologia/img_acupuntura_agragada_a_podologia_5.svg',
+            '/assets/pagina_serviços/acupuntura_agregada_a_podologia/img_acupuntura_agragada_a_podologia_6.svg',
+            '/assets/pagina_serviços/acupuntura_agregada_a_podologia/img_acupuntura_agragada_a_podologia_7.svg',
+            '/assets/pagina_serviços/acupuntura_agregada_a_podologia/img_acupuntura_agragada_a_podologia_8.svg',
+            '/assets/pagina_serviços/acupuntura_agregada_a_podologia/img_acupuntura_agragada_a_podologia_9.svg',
+
+
         ]
     },
     {
-        title: '11',
-        image: '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-        collapseTitle: 'Podologia Geriatrica',
-        collapseContent: 'Descrição detalhada do tratamento 1.',
+        title: 'Acupuntura Sistemica',
+        image: '/assets/pagina_serviços/acupuntura_sistemica/img_acupuntura_sistemica_1.svg',
+        collapseTitle: 'Acupuntura Sistemica',
+        collapseContent: 'Baseia-se no uso de agulhas em pontos específicos do corpo por onde passam os canais de energia vital, chamados de meridianos, promovendo o equilíbrio físico e mental.',
         collapseImages: [
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-2.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-3.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-4.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-5.png'
+            '/assets/pagina_serviços/acupuntura_sistemica/img_acupuntura_sistemica_1.svg',
+            '/assets/pagina_serviços/acupuntura_sistemica/img_acupuntura_sistemica_2.svg',
         ]
     },
     {
-        title: '13',
-        image: '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
+        title: 'Acupuntura Auricular',
+        image: '/assets/pagina_serviços/acupuntura_auricular/img_acupuntura_auricular_1.svg',
         collapseTitle: 'Podologia Geriatrica',
         collapseContent: 'Descrição detalhada do tratamento 1.',
         collapseImages: [
