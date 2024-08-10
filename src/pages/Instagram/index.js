@@ -1,3 +1,4 @@
+
 "use client";
 import React from 'react';
 import InstagramCarousel from '../../hooks/instagramCarousel.js';
@@ -69,3 +70,4 @@ const InstagramPage = () => {
 };
 
 export default InstagramPage;
+
