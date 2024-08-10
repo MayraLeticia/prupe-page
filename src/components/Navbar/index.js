@@ -7,13 +7,26 @@ const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
+  const [scrollThreshold, setScrollThreshold] = useState(0);
+
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
-    setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+
+    const scrollDifference = Math.abs(currentScrollPos - prevScrollPos);
+
+    if (scrollDifference > 20) {  // sensiblidade
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 20);
+      setScrollThreshold(0);
+    } else {
+      setScrollThreshold(scrollThreshold + scrollDifference);
+    }
+
+
     setPrevScrollPos(currentScrollPos);
   };
 
@@ -27,7 +40,9 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [prevScrollPos, visible, handleScroll]);
+
+  }, [prevScrollPos, visible, scrollThreshold]);
+
 
   return (
     <nav className={`${styles.navbar} ${visible ? styles.visible : styles.hidden}`}>
@@ -36,10 +51,12 @@ const Navbar = () => {
       </div>
       <ul className={`${styles.navLinks} ${isOpen ? styles.open : ''}`}>
         <li><a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>Início</a></li>
-        <li><a href="#instagram"  onClick={(e) => { e.preventDefault(); scrollToSection('instagram'); }}>Instagram</a></li>
-        <li><a href="#servicos"  onClick={(e) => { e.preventDefault(); scrollToSection('servicos'); }}>Serviços</a></li>
-        <li><a href="#espaco"  onClick={(e) => { e.preventDefault(); scrollToSection('espaco'); }}>Espaço</a></li>
-        <li><a href="#contato"  onClick={(e) => { e.preventDefault(); scrollToSection('contato'); }}>Contato</a></li>
+
+        <li><a href="#instagram" onClick={(e) => { e.preventDefault(); scrollToSection('instagram'); }}>Instagram</a></li>
+        <li><a href="#servicos" onClick={(e) => { e.preventDefault(); scrollToSection('servicos'); }}>Serviços</a></li>
+        <li><a href="#espaco" onClick={(e) => { e.preventDefault(); scrollToSection('espaco'); }}>Espaço</a></li>
+        <li><a href="#contato" onClick={(e) => { e.preventDefault(); scrollToSection('contato'); }}>Contato</a></li>
+
         <li className={styles.closeMenu} onClick={toggleMenu}>X</li>
       </ul>
       <div className={`${styles.hamburger} ${isOpen ? styles.open : ''}`} onClick={toggleMenu}>

@@ -1,85 +1,73 @@
-"use client"
 
-import Carrossel from '@/components/Carrossel';
-import Collapse from '@/components/Collapse';
-import { useState } from 'react';
-import styles from "./style.module.scss";
+"use client";
+import React from 'react';
+import InstagramCarousel from '../../hooks/instagramCarousel.js';
+import styles from './style.module.scss';
 
+const InstagramPage = () => {
+  const { posts, currentIndex, nextSlide, prevSlide, selectSlide, carouselRef } = InstagramCarousel();
 
-const itens = [
-    {
-        image: '/assets/instagram/image1instagram.svg',
-    },
-    {
-        image: '/assets/instagram/image2instagram.svg',
-    },
-    {
-        image: '/assets/instagram/image3instagram.svg',
-    },
-    {
-        image: '/assets/instagram/image4instagram.svg',
-    },
-    {
-        image: '/assets/instagram/image5instagram.svg',
-    },
-    {
-        image: '/assets/instagram/image6instagram.svg',
-    },
-    {
-        image: '/assets/instagram/image7instagram.svg',
-    },
-];
+  if (!posts.length) return <div></div>;
 
-const breakpoints = {
+  const visiblePosts = [
+    posts[(currentIndex - 2 + posts.length) % posts.length],
+    posts[(currentIndex - 1 + posts.length) % posts.length],
+    posts[currentIndex],
+    posts[(currentIndex + 1) % posts.length],
+    posts[(currentIndex + 2) % posts.length],
+  ];
 
-    480: {
-        slidesPerView: 1,
-        spaceBetween: 10
-    },
-    768: {
-        slidesPerView: 2,
-        spaceBetween: 10
-    },
-    992: {
-        slidesPerView: 3,
-        spaceBetween: 10
-    },
-    1200: {
-        slidesPerView: 4,
-        spaceBetween: 10
-    },
-    1920: {
-        slidesPerView: 5,
-        spaceBetween: 10
+  const handleClick = (index) => {
+    const newIndex = (currentIndex + index - 2 + posts.length) % posts.length;
+    if (newIndex === currentIndex) {
+      window.open(posts[currentIndex].permalink, '_blank');
+    } else {
+      selectSlide(newIndex);
     }
+  };
+
+  return (
+    <div className={styles.carouselContainer} ref={carouselRef}>
+      <h2 className={styles.title}>Instagram</h2>
+      <div className={styles.carousel}>
+        <button className={`${styles.arrow} ${styles.left}`} onClick={prevSlide}>
+          <img src="/images/arrow-left.png" alt="Previous" />
+        </button>
+        
+        <div className={styles.carouselInner}>
+          {visiblePosts.map((post, index) => (
+            <div
+              key={post.id}
+              className={`${styles.slide} ${index === 2 ? styles.active : ''}`}
+              onClick={() => handleClick(index)}
+            >
+              <div className={styles.imageContainer}>
+                <img src={post.media_url} alt={post.caption} />
+                <div className={styles.instagramOverlay}>
+                  <img src="assets/icons/instagram-hover.png" alt="Instagram" />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <button className={`${styles.arrow} ${styles.right}`} onClick={nextSlide}>
+          <img src="/images/arrow-right.png" alt="Next" />
+        </button>
+
+        <div className={styles.dots}>
+          {posts.map((_, index) => (
+            <div
+              key={index}
+              className={`${styles.dot} ${index === currentIndex ? styles.active : ''}`}
+              onClick={() => selectSlide(index)}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
 
-const Instagram = () => {
-    
-    return (
-        <div id="instagram" className={styles.container}> 
-            <label>Instagram</label>
-            <div className={styles.carousel}>
-                <Carrossel breakpoints={breakpoints} slidesPerView={5} spaceBetween={10} arrows={true} navigators={false}>
-                    {itens.map((item, index) => (
-                        <div key={index} className={styles.image_container}>
-                            <a>
-                                <img
-                                    src={item.image}
-                                    alt='slider'
-                                    className={`${styles.slide}`}
-                                    
-                                />
-                                <p className={styles.image_title}>{item.title}</p>
-                            </a>
-                        </div>
-                    ))}
-                </Carrossel>
-            </div>
+export default InstagramPage;
 
-        </div>
-    );
-}
-
-
-export default Instagram;
