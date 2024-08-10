@@ -1,0 +1,118 @@
+.SliderWrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+
+  overflow: hidden;
+  background-color: black;
+  border-radius: 20px;
+  
+  .Slide {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+
+  
+    &.active {
+      opacity: 1;
+    }
+  
+    &.inactive {
+      opacity: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+  
+    }
+  }
+
+}  
+
+.progressWrapper {
+  width: 100%;
+  top: 0;
+
+  padding: 10px;
+  
+  display: flex;
+  justify-content: space-between;
+
+  position: absolute;
+}
+
+.progressBar {
+  flex: 1;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--progress-width);
+    background: white;
+    transition: width 1s linear;
+  }
+
+  &:not([style*="100%"])::before {
+    transition: none;
+  }
+}
+
+.prevButton {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  background-color: transparent;
+  border: none;
+
+  transition: transform 1000ms;
+
+  &:hover{
+    background: linear-gradient(90deg, rgba(255,255,255,0.5032387955182073) 0%, rgba(252,176,69,0) 36%);    
+    transform: translateX(-20px);
+  }
+}
+
+.nextButton {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  background-color: transparent;
+  border: none;
+
+  background-color: transparent;
+  border: none;
+
+  transition: transform 1000ms;
+
+  &:hover{
+    background: linear-gradient(90deg, rgba(252,176,69,0) 64%, rgba(255,255,255,0.5032387955182073) 100%);    
+    transform: translateX(20px);
+  }
+}

@@ -4,17 +4,17 @@ const useCarousel = () => {
   const professionals = [
     {
       name: 'Gláucia Alves',
-      image: '/images/glaucia.png',
+      image: '/assets/images/glaucia.png',
       info: 'Graduada em Podologia (universidade Anhembi Morumbi-SP), Pós graduada em Gerontologia. Pedagoga, Pós graduanda em Neuropsicopedagogia. Docente no curso de Podologia do Senac Ce. Acupunturista formada pela Associação Brasileira de Acupuntura (ABA), com aperfeiçoamento na University of Traditional Chinese Medicine, Tianjin – China e World Federativo of Acupuncture – Moxibustion Societies, Beijing – China.',
     },
     {
       name: 'Mazé Brandão',
-      image: '/images/maze.png',
+      image: '/assets/images/maze.png',
       info: 'Técnica em Podologia com formação no Senac-CE, com diversos cursos de especialização em feridas e curativos, pés diabéticos e também ventosaterapia. Acupunturista formada pela ABA – Associação Brasileira de Acupuntura, com aperfeiçoamento na University of traditional Chinese Medicine –  Tianjin – China e World Federativo of Acupunctura – Moxibustion Societies – Beijing – China.',
     },
     {
       name: 'Fátima Brandão',
-      image: '/images/fatima.png',
+      image: '/assets/images/fatima.png',
       info: 'Técnica em Podologia com formação no Senac-CE e secretária executiva. Especialização em Segurança Alimentar e Segurança do Trabalho pela STDS – Secretaria do Trabalho e Desenvolvimento Social. Treinamentos em tratamento dedicado a podologia infantil, atendimento dedicado a idosos, utilização de equipamentos para tratamentos, correções de unhas e patologias dos pés.'
     }
   ];
