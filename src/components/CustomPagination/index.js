@@ -4,8 +4,8 @@ import styles from './style.module.scss';
 
 const CustomPagination = () => {
     const swiper = useSwiper();
-    const totalSlides = swiper.slides.length - 2; // Ajuste por causa dos elementos duplicados do Swiper
-    const slidesPerButton = 5;
+    const totalSlides = swiper.slides.length - 5; // Ajuste por causa dos elementos duplicados do Swiper
+    const slidesPerButton = 2;
     const totalButtons = Math.ceil(totalSlides / slidesPerButton);
     const [currentPage, setCurrentPage] = useState(0);
 

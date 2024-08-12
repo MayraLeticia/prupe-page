@@ -230,49 +230,39 @@ const itens2 = [
             '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-5.png'
         ]
     },
-    {
-        title: '18',
-        image: '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-        collapseTitle: 'Podologia Geriatrica',
-        collapseContent: 'Descrição detalhada do tratamento 1.',
-        collapseImages: [
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-2.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-3.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-4.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-5.png'
-        ]
-    },
 ];
 
 const breakpoints = {
     250: {
-        slidesPerView: 1,
-        spaceBetween: 10
+        slidesPerView: 1
     },
     480: {
         slidesPerView: 2,
-        spaceBetween: 10
+        spaceBetween: 24
     },
     600: {
         slidesPerView: 3,
-        spaceBetween: 10
+        spaceBetween: 24
     },
     768: {
         slidesPerView: 4,
-        spaceBetween: 10
+        spaceBetween: 24
     },
     992: {
         slidesPerView: 5,
-        spaceBetween: 10
+        spaceBetween: 24
     },
     1200: {
         slidesPerView: 6,
-        spaceBetween: 10
+        spaceBetween: 24
+    },
+    1600: {
+        slidesPerView: 6,
+        spaceBetween: 24
     },
     1920: {
         slidesPerView: 7,
-        spaceBetween: 10
+        spaceBetween: 24
     }
 };
 
@@ -311,7 +301,7 @@ export default function Serviços() {
                 <label>Podologia</label>
 
                 <div>
-                    <Carrossel breakpoints={breakpoints} slidesPerView={7} spaceBetween={24} arrows={true} navigators={true}>
+                    <Carrossel breakpoints={breakpoints} slidesPerView={5} spaceBetween={24} arrows={true} navigators={true}>
                         {itens1.map((item, index) => (
                             <div key={index} className={styles.image_container}>
                                 <img
@@ -344,7 +334,7 @@ export default function Serviços() {
                 <label>Acupuntura</label>
 
                 <div>
-                    <Carrossel breakpoints={breakpoints} slidesPerView={7} spaceBetween={24} arrows={true} navigators={true}>
+                    <Carrossel breakpoints={breakpoints} slidesPerView={5} spaceBetween={24} arrows={true} navigators={false}>
                         {itens2.map((item, index) => (
                             <div key={index} className={styles.image_container}>
                                 <img
