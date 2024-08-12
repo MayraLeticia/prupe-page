@@ -5,7 +5,7 @@ import Collapse from '@/components/Collapse';
 import { useState } from 'react';
 import styles from "./style.module.scss";
 
-const itens = [
+const itens1 = [
     {
         title: 'Podogeriatria',
         image: '/assets/pagina_serviços/podogeriatria/img_podogeriatria_1.svg',
@@ -133,6 +133,9 @@ const itens = [
             '/assets/pagina_serviços/orteses/img_orteses_3.svg',
         ]
     },
+];
+
+const itens2 = [
     {
         title: 'Acupuntura Agragada à Podologia',
         image: '/assets/pagina_serviços/acupuntura_agregada_a_podologia/img_acupuntura_agragada_a_podologia_2.svg',
@@ -278,9 +281,14 @@ const breakpoints = {
 
 export default function Serviços() {
     const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndex2, setActiveIndex2] = useState(null);
 
     const handleToggleCollapse = (index) => {
         setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+    };
+
+    const handleToggleCollapse2 = (index) => {
+        setActiveIndex2((prevIndex) => (prevIndex === index ? null : index));
     };
 
     return (
@@ -300,11 +308,11 @@ export default function Serviços() {
             {/* carrosel com colapse */}
             <div className={styles.container_carousel}>
 
-                <label>Podologia & Acupuntura</label>
+                <label>Podologia</label>
 
                 <div>
-                    <Carrossel breakpoints={breakpoints} slidesPerView={7} spaceBetween={10} arrows={true} navigators={true}>
-                        {itens.map((item, index) => (
+                    <Carrossel breakpoints={breakpoints} slidesPerView={7} spaceBetween={24} arrows={true} navigators={true}>
+                        {itens1.map((item, index) => (
                             <div key={index} className={styles.image_container}>
                                 <img
                                     src={item.image}
@@ -320,11 +328,44 @@ export default function Serviços() {
                         {activeIndex !== null && (
                             <Collapse
                                 className={styles.collapse}
-                                collapseTitle={itens[activeIndex].collapseTitle}
-                                collapseContent={itens[activeIndex].collapseContent}
-                                collapseImages={itens[activeIndex].collapseImages}
+                                collapseTitle={itens1[activeIndex].collapseTitle}
+                                collapseContent={itens1[activeIndex].collapseContent}
+                                collapseImages={itens1[activeIndex].collapseImages}
                                 isOpen={activeIndex !== null}
                                 onToggle={() => setActiveIndex(null)}
+                            />
+                        )}
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.container_carousel}>
+
+                <label>Acupuntura</label>
+
+                <div>
+                    <Carrossel breakpoints={breakpoints} slidesPerView={7} spaceBetween={24} arrows={true} navigators={true}>
+                        {itens2.map((item, index) => (
+                            <div key={index} className={styles.image_container}>
+                                <img
+                                    src={item.image}
+                                    alt='slider'
+                                    className={`${styles.slide} ${activeIndex2 === index ? styles.active : ''}`}
+                                    onClick={() => handleToggleCollapse2(index)}
+                                />
+                                <p className={styles.image_title}>{item.title}</p>
+                            </div>
+                        ))}
+                    </Carrossel>
+                    <div className={styles.container_collapse}>
+                        {activeIndex2 !== null && (
+                            <Collapse
+                                className={styles.collapse}
+                                collapseTitle={itens2[activeIndex2].collapseTitle}
+                                collapseContent={itens2[activeIndex2].collapseContent}
+                                collapseImages={itens2[activeIndex2].collapseImages}
+                                isOpen={activeIndex2 !== null}
+                                onToggle={() => setActiveIndex2(null)}
                             />
                         )}
                     </div>
