@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .container {
     width: 100vw;
 
@@ -9,7 +11,7 @@
 
     align-items: center;
 
-    @media (max-width: 950px) {
+    @media (max-width: $breakpoint-medium) {
         padding: 8vh 9%;
     }
 
@@ -19,7 +21,7 @@
         width: 80%;
 
         height: auto;
-        @media (max-width: 950px) {
+        @media (max-width: $breakpoint-medium) {
             flex-direction: column;
         }
         
@@ -31,18 +33,25 @@
             align-items: center;
             justify-content: flex-start;
 
-            @media (max-width: 950px) {
+            label {
+                font-size: $font-xlarge;
+                font-weight: 700;
+        
+                color: $color-gray6; 
+            }
+
+            @media (max-width: $breakpoint-medium) {
                 width: 100%;
                 padding-left: 0rem;
                 justify-content: center;
+
+                label {
+                    font-size: $font-large;
+                    
+                }
             }
 
-            label {
-                font-size: 48px;
-                font-weight: 700;
-        
-                color: #101828; //gray 6
-            }
+            
         }
 
         
@@ -57,25 +66,29 @@
             flex-direction: column;
 
             gap: 1rem;
+           
+            p{
+                font-size: $font-small;
+                font-weight: 400;
+        
+                color: $color-gray5; 
 
-            @media (max-width: 950px) {
+                strong {
+                    font-weight: 600;
+                }
+        
+        
+                
+            }
+
+            @media (max-width: $breakpoint-medium) {
                 width: 100%;
                 text-align: center;
                 margin-top: 2rem;
-            }
 
-            p{
-                font-size: 18px;
-                font-weight: 400;
-        
-                color: #475467; //gray 5
-        
-                @media (max-width: 950px) {
-                    font-size: 18px;
-                }
-        
-                strong {
-                    font-weight: 600;
+                p{
+                    font-size: $font-xsmall;
+
                 }
             }
         }
@@ -87,14 +100,16 @@
         margin-top: 3rem;
 
         label {
-            color: #101828; //gray 6
+            color: $color-gray6; 
             
-            font-size: 20px;
+            font-size: $font-small;
             font-weight: 700;
+
+            margin-bottom: 2rem;
 
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
 
         }
     }
@@ -125,16 +140,21 @@
 .image_title {
     position: absolute;
     bottom: 15px; /* Ajuste conforme necessário */
-    color: #fff; /* Cor do texto */
+    color: $color-gray1; /* Cor do texto */
     padding: 5px 10px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700px;
+    text-align: start;
+    font-size: $font-small;
+    font-weight: 800px;
+
+    @media (max-width: $breakpoint-medium) {
+        font-size: $font-xsmall;
+    }
+
 }
 
 .slide.active {
     border: solid;
-    border-color: #34D399;
+    border-color: $color-green2;
 }
 
 .container_collapse {
