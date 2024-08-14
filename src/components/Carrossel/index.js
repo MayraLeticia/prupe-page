@@ -12,7 +12,7 @@ import { NextButton, PrevButton } from '../NavigationButton';
 import styles from './style.module.scss';
 register();
 
-const Carrossel = ({ breakpoints, children, slidesPerView, spaceBetween, arrows, navigators, autoplay }) => {
+const Carrossel = ({ breakpoints, children, slidesPerView, spaceBetween, arrows, navigators, autoplay, negativeNavigator, slideNavigator}) => {
 
     const [isBeginning, setIsBeginning] = useState(true);
     const [isEnd, setIsEnd] = useState(false);
@@ -85,7 +85,7 @@ const Carrossel = ({ breakpoints, children, slidesPerView, spaceBetween, arrows,
                 ))}
                 {arrows && (!isBeginning && <PrevButton></PrevButton>)}
                 {arrows && (!isEnd && <NextButton></NextButton>)}
-                {navigators && <CustomPagination></CustomPagination>}
+                {navigators && <CustomPagination slideNavigator={slideNavigator} negativeNavigator={negativeNavigator} ></CustomPagination>}
             </Swiper>
         </div>
     );

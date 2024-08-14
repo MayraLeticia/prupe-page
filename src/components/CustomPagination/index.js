@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { useSwiper } from 'swiper/react';
 import styles from './style.module.scss';
 
-const CustomPagination = () => {
+const CustomPagination = ({slideNavigator, negativeNavigator}) => {
     const swiper = useSwiper();
-    const totalSlides = swiper.slides.length - 5; // Ajuste por causa dos elementos duplicados do Swiper
-    const slidesPerButton = 2;
+    const totalSlides = swiper.slides.length - negativeNavigator; // Ajuste por causa dos elementos duplicados do Swiper
+    const slidesPerButton = slideNavigator;
     const totalButtons = Math.ceil(totalSlides / slidesPerButton);
     const [currentPage, setCurrentPage] = useState(0);
 

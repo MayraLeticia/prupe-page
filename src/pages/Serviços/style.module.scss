@@ -123,12 +123,14 @@
 
 .image_title {
     position: absolute;
+    display: flex;
     bottom: 15px; /* Ajuste conforme necessário */
     color: #fff; /* Cor do texto */
     padding: 5px 10px;
-    text-align: center;
+    text-align: start;
     font-size: 18px;
     font-weight: 700px;
+    text-shadow: 2px 2px 2px #101828;
 }
 
 .slide.active {

@@ -301,7 +301,7 @@ export default function Serviços() {
                 <label>Podologia</label>
 
                 <div>
-                    <Carrossel breakpoints={breakpoints} slidesPerView={5} spaceBetween={24} arrows={true} navigators={true}>
+                    <Carrossel breakpoints={breakpoints} slidesPerView={5} spaceBetween={24} arrows={true} navigators={true} slideNavigator={4} negativeNavigator={2}>
                         {itens1.map((item, index) => (
                             <div key={index} className={styles.image_container}>
                                 <img
@@ -334,7 +334,7 @@ export default function Serviços() {
                 <label>Acupuntura</label>
 
                 <div>
-                    <Carrossel breakpoints={breakpoints} slidesPerView={5} spaceBetween={24} arrows={true} navigators={false}>
+                    <Carrossel breakpoints={breakpoints} slidesPerView={5} spaceBetween={24} arrows={true} navigators={true} slideNavigator={2} negativeNavigator={3}>
                         {itens2.map((item, index) => (
                             <div key={index} className={styles.image_container}>
                                 <img
