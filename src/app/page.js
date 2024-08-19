@@ -7,6 +7,9 @@ import Header from "../pages/Home/index"
 import AboutUs from "@/pages/AboutUs";
 import Instagram from "@/pages/Instagram";
 
+import "../styles/global.scss";
+
+
 
 const Home = () => {
   return (

@@ -1,20 +1,32 @@
+@import '../../styles/variables.scss';
+
 .carouselContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F2F4F7;
+
+  padding: 15.34vh 9%;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-gray2;
   
-    .title {
-      color: #101828;
-      font-family: 'Inter', sans-serif;
-      width: 238px;
-      height: 64px;
-      text-align: center;
-      font-size: 2rem;
-      margin-top: 80px;
+  .title {
+    color: $color-gray6;
+    font-family: 'Inter', sans-serif;
+    width: 238px;
+    height: 64px;
+    text-align: center;
+    font-size: $font-xlarge;
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+    @media (max-width: $breakpoint-medium) {
+      font-size: $font-large;  
       margin-bottom: 20px;
+  
     }
   }
+}
   
   .carousel {
     position: relative;
@@ -124,19 +136,19 @@
       .dot {
         height: 10px;
         width: 10px;
-        background-color: #bbb;
+        background-color: $color-gray4;
         border-radius: 50%;
         display: inline-block;
         margin: 0 5px;
         cursor: pointer;
   
         &.active {
-          background-color: #717171;
+          background-color: $color-gray5;
         }
       }
     }
   
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint-medium) {
       .arrow {
         width: 0px;
         height: 0px;
@@ -151,9 +163,15 @@
           height: 200px;
         }
       }
+
+      .title {
+        
+        font-size: $font-medium;
+        
+      }
     }
   
-    @media (max-width: 480px) {
+    @media (max-width: $breakpoint-small) {
       .arrow {
         width: 0px;
         height: 0px;
@@ -182,6 +200,12 @@
           height: 8px;
           width: 8px;
         }
+      }
+
+      .title {
+        
+        font-size: $font-medium;
+        
       }
     }
   }

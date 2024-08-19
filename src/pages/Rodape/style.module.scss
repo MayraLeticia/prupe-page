@@ -1,9 +1,11 @@
+@import '../../styles/variables.scss';
+
 .footer_main {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
-    background-color: #f3f4f6;
+    background-color: $color-gray2;
 
 
     .footer_container {
@@ -17,9 +19,10 @@
             display: flex;
             flex-direction: row;
 
-            @media (max-width: 620px) {
+            @media (max-width: $breakpoint-small) {
                 flex-direction: column;
                 align-items: center;
+                justify-content: center;
             }
           
             .content {
@@ -29,25 +32,28 @@
                 flex-direction: column;
                 justify-content: center;
 
-                @media (max-width: 620px) {
+                @media (max-width: $breakpoint-small) {
                     width: 100%;
                 }
 
                 p {
-                    color: #475467;
-                    font-size: 16px;
+                    color: $color-gray5;
+                    font-size: $font-xsmall;
                     font-weight: 500;
                 }
+
                 .logo {
                     height: 4rem;
                     width: 6rem;
                 }
+
                 .link {
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
                     height: auto;
                     width: auto;
+
                     gap: 2rem;
                     margin-top: 0.5rem;
                     .instagram,
@@ -68,16 +74,16 @@
                 width: 50%;
                 gap: 0.5rem;
 
-                @media (max-width: 620px) {
+                @media (max-width: $breakpoint-small) {
                     width: 100%;
                     margin-top:  1.5rem;
                     align-items: flex-start;
                 }
 
                 .text_localizacao {
-                    font-size: 16px;
+                    font-size: $font-xsmall;
                     font-weight: 500;
-                    color: #98A2B3;
+                    color: $color-gray4;
                 }
             }
         }

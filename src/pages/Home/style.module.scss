@@ -1,10 +1,10 @@
+@import '../../styles/variables.scss';
+
 .header {
   width: 100vw;
   height: 100vh;
 
-
   padding: 16.34vh 9%;
-
 
   position: relative;
   background: url('/assets/home/podologia-bg.png') no-repeat center center;
@@ -25,10 +25,16 @@
   }
 
   .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+
     position: relative;
     z-index: 2;
     border-radius: 10px;
-    color: white;
+    color: $color-gray1;
     max-width: 1200px;
 
     .logo {
@@ -36,16 +42,16 @@
       margin-bottom: 1rem;
     }
 
-    h1 {
+    label {
       margin-bottom: 1rem;
-      font-size: 24px;
+      font-size: $font-medium;
       font-weight: 500;
     }
 
     p {
       margin-bottom: 2rem;
       font-weight: 400; 
-      font-size: 18px;
+      font-size: $font-small;
     }
 
     .socialIcons {
@@ -61,7 +67,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-medium) {
   .header {
     .overlay {
       padding: 1rem;
@@ -70,12 +76,12 @@
         width: 150px;
       }
 
-      h1 {
-        font-size: 1.5rem;
+      label {
+        font-size: $font-small;
       }
 
       p {
-        font-size: 1rem;
+        font-size: $font-xsmall;
       }
 
       .socialIcons a img {
@@ -86,8 +92,7 @@
   }
 }
 
-
-@media (max-width: 480px) {
+@media (max-width: $breakpoint-small) {
   .header {
     .overlay {
       padding: 0.5rem;
@@ -96,12 +101,12 @@
         width: 120px;
       }
 
-      h1 {
-        font-size: 1.2rem;
+      label {
+        font-size: $font-small;
       }
 
       p {
-        font-size: 1rem;
+        font-size: $font-xsmall;
       }
 
       .socialIcons a img {
