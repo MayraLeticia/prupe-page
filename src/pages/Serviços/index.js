@@ -233,8 +233,13 @@ const itens2 = [
 ];
 
 const breakpoints = {
-    250: {
-        slidesPerView: 1
+    360: {
+        slidesPerView: 2,
+        spaceBetween: 24
+    },
+    400: {
+        slidesPerView: 2,
+        spaceBetween: 24
     },
     480: {
         slidesPerView: 2,
@@ -263,6 +268,45 @@ const breakpoints = {
     1920: {
         slidesPerView: 6,
         spaceBetween: 24
+    }
+};
+
+const breakpoints1 = {
+    360: {
+        slidesPerView: 2,
+        spaceBetween: 24
+    },
+    400: {
+        slidesPerView: 2,
+        spaceBetween: 24
+    },
+    480: {
+        slidesPerView: 2,
+        spaceBetween: 24
+    },
+    600: {
+        slidesPerView: 3,
+        spaceBetween: 24
+    },
+    768: {
+        slidesPerView: 4,
+        spaceBetween: 24
+    },
+    992: {
+        slidesPerView: 5,
+        spaceBetween: 24
+    },
+    1200: {
+        slidesPerView: 5,
+        spaceBetween: 24
+    },
+    1600: {
+        slidesPerView: 6,
+        spaceBetween: 10
+    },
+    1920: {
+        slidesPerView: 6,
+        spaceBetween: 10
     }
 };
 
@@ -301,7 +345,7 @@ export default function Serviços() {
                 <label>Podologia</label>
 
                 <div>
-                    <Carrossel breakpoints={breakpoints} slidesPerView={5} spaceBetween={24} arrows={true} navigators={true} slideNavigator={4} negativeNavigator={2}>
+                    <Carrossel breakpoints={breakpoints} slidesPerView={5} spaceBetween={24} arrows={true} navigators={true}>
                         {itens1.map((item, index) => (
                             <div key={index} className={styles.image_container}>
                                 <img
@@ -334,7 +378,7 @@ export default function Serviços() {
                 <label>Acupuntura</label>
 
                 <div>
-                    <Carrossel breakpoints={breakpoints} slidesPerView={5} spaceBetween={24} arrows={true} navigators={true} slideNavigator={2} negativeNavigator={3}>
+                    <Carrossel breakpoints={breakpoints1} slidesPerView={7} spaceBetween={24} arrows={true} navigators={true}>
                         {itens2.map((item, index) => (
                             <div key={index} className={styles.image_container}>
                                 <img
