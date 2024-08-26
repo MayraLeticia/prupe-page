@@ -57,7 +57,7 @@ const itens1 = [
         title: 'Unha Encravada',
         image: '/assets/pagina_serviços/unha_encravada/img_unha_encravada_1.svg',
         collapseTitle: 'Unha Encravada',
-        collapseContent: 'Com o nome científico (técnico) de onicocriptose, a unha encravada é um dos problemas mais comuns nos consultórios podológicos.\n Com técnicas e instrumentais específicos, a Podologia exerce um papel importante na prevenção e no tratamento da unha encravada.\n Nosso maior diferencial é o estudo da causa, que vai do calçado inapropriados, o corte inadequado, a anatomia, alterações posturais, entre outros. O podólogo devidamente qualificado, além de associar o conhecimento da causa com a técnica exclusiva da Podologia, acompanha e orienta para que não haja recidiva.\n Para o alívio da dor utilizamos:\n • Anestésico tópico\n • Laser terapêutico\n • Eletroterapia\n • Acupuntura',
+        collapseContent: 'A onicocriptose, ou unha encravada, é frequente nos consultórios de podologia. A Podologia, com técnicas especializadas, desempenha um papel vital na prevenção e tratamento desse problema. Nosso diferencial está em identificar causas, como o uso de calçados inadequados, cortes incorretos e alterações posturais, aplicando esse conhecimento junto a técnicas exclusivas para prevenir recidivas. Para o alívio da dor, utilizamos anestésicos tópicos, laser terapêutico, eletroterapia e acupuntura.',
         collapseImages: [
             '/assets/pagina_serviços/unha_encravada/img_unha_encravada_1.svg',
             '/assets/pagina_serviços/unha_encravada/img_unha_encravada_2.svg',
@@ -71,7 +71,7 @@ const itens1 = [
         title: 'Calos',
         image: '/assets/pagina_serviços/calos/img_calos_2.svg',
         collapseTitle: 'Calos',
-        collapseContent: 'CalosMas, é só um calo!\n Não é só um calo, é um problema que altera o deambular, o andar, que altera a postura, causam dores, que podem evoluir para o joelho, quadril e coluna, limitando os movimentos.\n São vários os tipos de calos, com causas e tratamentos diferentes. A descoberta da causa é fundamental para sua eliminação.',
+        collapseContent: 'Mas, é só um calo!\n Não é só um calo, é um problema que altera o deambular, o andar, que altera a postura, causam dores, que podem evoluir para o joelho, quadril e coluna, limitando os movimentos.\n São vários os tipos de calos, com causas e tratamentos diferentes. A descoberta da causa é fundamental para sua eliminação.',
         collapseImages: [
             '/assets/pagina_serviços/calos/img_calos_2.svg',
             '/assets/pagina_serviços/calos/img_calos_3.svg',
@@ -137,7 +137,7 @@ const itens1 = [
 
 const itens2 = [
     {
-        title: 'Acupuntura Agragada à Podologia',
+        title: 'Acupuntura Agregada à Podologia',
         image: '/assets/pagina_serviços/acupuntura_agregada_a_podologia/img_acupuntura_agragada_a_podologia_2.svg',
         collapseTitle: 'Acupuntura Agragada à Podologia',
         collapseContent: 'Quando resolvemos agregar a Acupuntura à Podologia, não imaginávamos a dimensão, o leque de benefícios que nos traria esta associação. Hoje utilizamos as técnicas da Medicina Tradicional Chinesa (MTC) em vários procedimentos podológicos, como, para o alívio da dor nos tratamentos de unha encravada, remoção de calos, para a diminuição do processo inflamatório em fascite plantar e esporão de calcâneo, lesões esportivas, nas onicomicoses, para acelerar o processo de cicatrização em casos de feridas complexas.\n Por isso criamos uma página inteirinha com todas as terapias da MTC que aplicamos.',

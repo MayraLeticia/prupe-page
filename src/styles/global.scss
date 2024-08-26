@@ -1,4 +1,6 @@
+@import './variables.scss';
 
+/* Reset and global styles */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -18,6 +20,5 @@ a {
 
 p, label, h1, span {
   font-family: 'Inter', sans-serif;
-  
   margin: 12px 0;
 }

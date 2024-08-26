@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .container {
     width: 100vw;
     height: 100vh;
@@ -9,28 +11,39 @@
     align-items: center;
     flex-direction: row;
 
-    background-color: #EAECF0; //gray 3
+    background-color: $color-gray3; 
 
-    @media (max-width: 950px) {
-        flex-direction: column;
-        padding: 8vh 9%;
-    }
 
     label {
-        font-size: 60px;
+        font-size: $font-xlarge;
         font-weight: 700;
 
-        color: #101828; //gray 6
+        color: $color-gray6; 
     }
 
     p{
-        font-size: 16px;
+        font-size: $font-small ;
         font-weight: 400;
 
-        color: #475467; //gray 5
+        color: $color-gray5; //gray 5
 
         strong {
             font-weight: 600;
+        }
+    }
+
+    @media (max-width: $breakpoint-medium) {
+        flex-direction: column;
+        padding: 8vh 9%;
+
+        label {
+            font-size: $font-large;
+            
+        }
+    
+        p{
+            font-size: $font-xsmall ;
+            
         }
     }
 
@@ -46,12 +59,7 @@
         align-items: flex-start;
         flex-direction: column;
 
-        @media (max-width: 950px) {
-            margin-right: 0;
-
-            width: 100%;
-        }
-
+        
         .contacts {
 
             display: flex;
@@ -62,18 +70,32 @@
             > label {
                 margin: 0;
 
-                font-size: 24px;
-                font-weight: 400;
+                font-size: $font-medium;
+                font-weight: 500;
 
-                color: #101828; //gray 6
+                color: $color-gray6;
             }
         }
+
+        @media (max-width: $breakpoint-medium) {
+            margin-right: 0;
+
+            width: 100%;
+
+            .contacts > label {
+                
+                font-size: $font-small;
+                
+            }
+            
+        }
+
     }
 
     .carousel_container{
         width: 50%;
         height: auto; //hug content
-        @media (max-width: 950px) {
+        @media (max-width: $breakpoint-medium) {
             width: 100%;
         }
     }

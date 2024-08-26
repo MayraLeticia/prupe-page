@@ -1,11 +1,14 @@
-import styles from "../styles/page.module.css";
-import Espaco  from "../pages/Espaco/index";
-import Contato  from "../pages/Contato/index";
-import Serviços from "@/pages/Serviços";
-import Rodape from "@/pages/Rodape";
-import Header from "../pages/Home/index"
 import AboutUs from "@/pages/AboutUs";
 import Instagram from "@/pages/Instagram";
+import Rodape from "@/pages/Rodape";
+import Serviços from "@/pages/Serviços";
+import Contato from "../pages/Contato/index";
+import Espaco from "../pages/Espaco/index";
+import Header from "../pages/Home/index";
+import styles from "../styles/page.module.css";
+
+import "../styles/global.scss";
+
 
 
 const Home = () => {

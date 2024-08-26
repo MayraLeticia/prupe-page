@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styles from './style.module.scss';
 
 const Story = ({ images }) => {
@@ -18,7 +18,24 @@ const Story = ({ images }) => {
         };
     }, [currentSlide]);
 
+    useEffect(() => {
+        // Reinicializar o estado quando o número de imagens mudar
+        setCurrentSlide(0);
+        setProgressBars(Array(images.length).fill(0));
+        clearInterval(slideInterval.current);
+        clearInterval(progressInterval.current);
+        startSlideShow();
+        
+        return () => {
+            clearInterval(slideInterval.current);
+            clearInterval(progressInterval.current);
+        };
+    }, [images]);
+
     const startSlideShow = () => {
+        clearInterval(slideInterval.current);
+        clearInterval(progressInterval.current);
+
         slideInterval.current = setInterval(() => {
             setCurrentSlide(prev => {
                 if (prev === images.length - 1) {
@@ -32,10 +49,10 @@ const Story = ({ images }) => {
         progressInterval.current = setInterval(() => {
             setProgressBars(prevBars => {
                 const newBars = [...prevBars];
-                newBars[currentSlide] = Math.min(newBars[currentSlide] + 2, 100); // Increment progress bar of current slide
+                newBars[currentSlide] = Math.min(newBars[currentSlide] + 2, 100); // Incrementa o progresso do slide atual
                 if (currentSlide > 0) {
                     for (let i = 0; i < currentSlide; i++) {
-                        newBars[i] = 100; // Keep all previous bars filled
+                        newBars[i] = 100; // Mantém todos os barras anteriores preenchidas
                     }
                 }
                 return newBars;
@@ -46,7 +63,11 @@ const Story = ({ images }) => {
     const handleNext = () => {
         clearInterval(slideInterval.current);
         clearInterval(progressInterval.current);
-        setProgressBars(Array(images.length).fill(0));
+        setProgressBars(prevBars => {
+            const newBars = Array(images.length).fill(0);
+            newBars[(currentSlide + 1) % images.length] = 0;
+            return newBars;
+        });
         setCurrentSlide(prev => (prev === images.length - 1 ? 0 : prev + 1));
         startSlideShow();
     };
