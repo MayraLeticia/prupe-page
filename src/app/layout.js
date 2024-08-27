@@ -6,11 +6,14 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Prupé Podologia",
   description: "Page Prupé Podologia",
+  icons: {
+    icon: "/favicon.png", // Caminho para o favicon dentro da pasta public
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className={inter.className}>{children}</body>
     </html>
   );
