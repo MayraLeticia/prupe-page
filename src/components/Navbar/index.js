@@ -47,7 +47,7 @@ const Navbar = () => {
   return (
     <nav className={`${styles.navbar} ${visible ? styles.visible : styles.hidden}`}>
       <div className={styles.logo}>
-        <img src="/assets/logo/logo.svg" alt="Logo" />
+        <img src="/assets/logo/nova_logo.svg" alt="Logo" />
       </div>
       <ul className={`${styles.navLinks} ${isOpen ? styles.open : ''}`}>
         <li><a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>Início</a></li>

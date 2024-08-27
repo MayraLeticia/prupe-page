@@ -6,6 +6,7 @@ import Rodape from "@/pages/Rodape";
 import Header from "../pages/Home/index"
 import AboutUs from "@/pages/AboutUs";
 import Instagram from "@/pages/Instagram";
+import Aniversario from "@/pages/Aniversario";
 
 import "../styles/global.scss";
 
@@ -20,6 +21,7 @@ const Home = () => {
       <Serviços/>
       <Espaco/>
       <Contato/>
+      <Aniversario/>
       <Rodape/>
     </main>
   );
