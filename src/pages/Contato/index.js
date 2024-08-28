@@ -37,11 +37,11 @@ const Contato = () => {
                 <label>Entre em contato</label>
                 <div className={styles.contacts}>
                     <p>Contatos</p>
-                    <label>email@exemplo.com</label>
                     <label>(85) 3257-2106</label>
                     <label>(85) 9 8778-7914</label>
+                    <label>prupeglaucia@hotmail.com</label>
                 </div>
-                <p>Venha conhecer os benefícios de ser cliente Prupé. Entre em contato com nosso atendimento especializado, ou envie mensagem pelo formulário abaixo.</p>
+                <p>Venha conhecer os benefícios de ser cliente Prupé. Entre em contato com nosso atendimento especializado.</p>
             </div>
 
             <div className={styles.carousel_container}>
