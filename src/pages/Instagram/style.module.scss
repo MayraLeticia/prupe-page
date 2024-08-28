@@ -147,6 +147,19 @@
         }
       }
     }
+
+    .info {
+      display: none;
+      color: $color-gray5;
+      font-size: $font-xsmall;
+      text-align: center;
+      margin-top: 10px;
+    
+      @media (max-width: $breakpoint-medium) {
+        display: block;
+      }
+    }
+    
   
     @media (max-width: $breakpoint-medium) {
       .arrow {

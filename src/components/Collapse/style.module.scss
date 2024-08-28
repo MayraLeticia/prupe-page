@@ -5,7 +5,7 @@
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    justify-items: center;
     margin-bottom: 2rem;
 
     @media (max-width: $breakpoint-medium) {
@@ -18,10 +18,13 @@
     height: auto;
     display: flex;
     flex-direction: row;
+    align-items: center;
 
-    @media (max-width: $breakpoint-small) {
+    @media (max-width: $breakpoint-large) {
         flex-direction: column;
+
     }
+
 }
 
 .collapse_description {
@@ -44,13 +47,13 @@
         color: $color-gray5; 
     }
 
-    @media (max-width: $breakpoint-small) {
+    @media (max-width: $breakpoint-large) {
         width: 100%;
         text-align: center;
 
     }
     
-    @media (max-width: $breakpoint-medium) {
+    @media (max-width: $breakpoint-medium   ) {
 
         .title {
             font-size: $font-small;
@@ -72,6 +75,13 @@
     width: 20%;
     margin-left: 2rem;
     height: 16rem;
+
+    @media (max-width: $breakpoint-large) {
+        width: 50%;
+        margin-left: 0;
+        margin-top: 1.5rem;
+
+    }
 
     @media (max-width: $breakpoint-small) {
         width: 100%;

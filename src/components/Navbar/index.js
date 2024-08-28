@@ -1,13 +1,12 @@
 "use client";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import styles from './style.module.scss';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
-
-  const [scrollThreshold, setScrollThreshold] = useState(0);
+  const navRef = useRef(null);
 
 
   const toggleMenu = () => {
@@ -19,11 +18,10 @@ const Navbar = () => {
 
     const scrollDifference = Math.abs(currentScrollPos - prevScrollPos);
 
-    if (scrollDifference > 20) {  // sensiblidade
-      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 20);
-      setScrollThreshold(0);
-    } else {
-      setScrollThreshold(scrollThreshold + scrollDifference);
+    if (!isOpen) {  // Somente esconder a navbar se o menu não estiver aberto
+      if (scrollDifference > 20) {
+        setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 20);
+      }
     }
 
 
@@ -34,18 +32,37 @@ const Navbar = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false);  // Fechar a navbar ao clicar em um item
+    }
+  };
+
+  const handleClickOutside = (event) => {
+    if (navRef.current && !navRef.current.contains(event.target)) {
+      setIsOpen(false);
     }
   };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
 
-  }, [prevScrollPos, visible, scrollThreshold]);
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+      document.addEventListener('click', handleClickOutside);
+    } else {
+      document.body.style.overflow = 'auto';
+      document.removeEventListener('click', handleClickOutside);
+    }
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      document.body.style.overflow = 'auto';
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [isOpen, prevScrollPos]);
 
 
   return (
-    <nav className={`${styles.navbar} ${visible ? styles.visible : styles.hidden}`}>
+    <nav ref={navRef} className={`${styles.navbar} ${visible ? styles.visible : styles.hidden}`}>
       <div className={styles.logo}>
         <img src="/assets/logo/nova_logo.svg" alt="Logo" />
       </div>
