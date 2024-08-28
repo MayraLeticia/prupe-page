@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-color: $color-gray2;
   
   .title {
@@ -22,7 +21,7 @@
     margin-bottom: 40px;
 
     @media (max-width: $breakpoint-medium) {
-      font-size: $font-large;
+      font-size: $font-large;  
       margin-bottom: 20px;
   
     }
@@ -148,6 +147,19 @@
         }
       }
     }
+
+    .info {
+      display: none;
+      color: $color-gray5;
+      font-size: $font-xsmall;
+      text-align: center;
+      margin-top: 10px;
+    
+      @media (max-width: $breakpoint-medium) {
+        display: block;
+      }
+    }
+    
   
     @media (max-width: $breakpoint-medium) {
       .arrow {

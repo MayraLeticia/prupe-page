@@ -27,7 +27,7 @@ const InstagramPage = () => {
   };
 
   return (
-    <div className={styles.carouselContainer} ref={carouselRef}>
+    <div id= "instagram" className={styles.carouselContainer} ref={carouselRef}>
       <h2 className={styles.title}>Instagram</h2>
       <div className={styles.carousel}>
         <button className={`${styles.arrow} ${styles.left}`} onClick={prevSlide}>
@@ -64,6 +64,9 @@ const InstagramPage = () => {
             />
           ))}
         </div>
+        <div className={styles.info}>
+        ⓘ Arraste para o lado para avançar.
+      </div>
       </div>
     </div>
   );
