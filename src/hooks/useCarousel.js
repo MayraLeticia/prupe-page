@@ -16,6 +16,11 @@ const useCarousel = () => {
       name: 'Fátima Brandão',
       image: '/assets/images/fatima.png',
       info: 'Técnica em Podologia com formação no Senac-CE e secretária executiva. Especialização em Segurança Alimentar e Segurança do Trabalho pela STDS – Secretaria do Trabalho e Desenvolvimento Social. Treinamentos em tratamento dedicado a podologia infantil, atendimento dedicado a idosos, utilização de equipamentos para tratamentos, correções de unhas e patologias dos pés.'
+    },
+    {
+      name: 'Atrine Carvalho',
+      image: '/assets/images/atrine.png',
+      info: 'Recepcionista e Assistente da Clínica Prupé Podologia, responsável por recepcionar pacientes, gerenciar agendamentos e apoiar os podólogos na preparação de salas e materiais. Sua organização e habilidade de comunicação garantem um atendimento eficiente e de qualidade, contribuindo para o bom funcionamento da clínica.'
     }
   ];
 
