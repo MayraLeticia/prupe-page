@@ -3,11 +3,10 @@
 .container {
     width: 100vw;
 
-    padding: 16.34vh 9%;
+    padding: 8vh 12%;
 
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 
     align-items: center;
 
@@ -19,10 +18,12 @@
         display: flex;
         flex-direction: row;
         width: 80%;
+        margin-bottom: 2rem;
 
         height: auto;
         @media (max-width: $breakpoint-medium) {
             flex-direction: column;
+            margin-bottom: 0;
         }
         
 
@@ -37,7 +38,7 @@
                 font-size: $font-xlarge;
                 font-weight: 700;
         
-                color: $color-gray6; 
+                color: $color-gray6;
             }
 
             @media (max-width: $breakpoint-medium) {
@@ -55,7 +56,6 @@
         }
 
         
-           
         .description {
 
             width: 50%;
@@ -66,12 +66,11 @@
             flex-direction: column;
 
             gap: 1rem;
-           
             p{
                 font-size: $font-small;
                 font-weight: 400;
         
-                color: $color-gray5; 
+                color: $color-gray5;
 
                 strong {
                     font-weight: 600;
@@ -84,7 +83,6 @@
             @media (max-width: $breakpoint-medium) {
                 width: 100%;
                 text-align: center;
-                margin-top: 2rem;
 
                 p{
                     font-size: $font-xsmall;
@@ -97,10 +95,10 @@
 
     .container_carousel {
         width: 100%;
-        margin-top: 3rem;
+        margin-top: 0.5rem;
 
         label {
-            color: $color-gray6; 
+            color: $color-gray6;
             
             font-size: $font-small;
             font-weight: 700;
@@ -139,12 +137,15 @@
 
 .image_title {
     position: absolute;
+    display: flex;
     bottom: 15px; /* Ajuste conforme necessário */
     color: $color-gray1; /* Cor do texto */
     padding: 5px 10px;
     text-align: start;
+    text-shadow: 2px 2px 2px #101828;
     font-size: $font-small;
     font-weight: 800px;
+    pointer-events: none;
 
     @media (max-width: $breakpoint-medium) {
         font-size: $font-xsmall;

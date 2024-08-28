@@ -5,7 +5,7 @@ import Collapse from '@/components/Collapse';
 import { useState } from 'react';
 import styles from "./style.module.scss";
 
-const itens = [
+const itens1 = [
     {
         title: 'Podogeriatria',
         image: '/assets/pagina_serviços/podogeriatria/img_podogeriatria_1.svg',
@@ -57,7 +57,7 @@ const itens = [
         title: 'Unha Encravada',
         image: '/assets/pagina_serviços/unha_encravada/img_unha_encravada_1.svg',
         collapseTitle: 'Unha Encravada',
-        collapseContent: 'Com o nome científico (técnico) de onicocriptose, a unha encravada é um dos problemas mais comuns nos consultórios podológicos.\n Com técnicas e instrumentais específicos, a Podologia exerce um papel importante na prevenção e no tratamento da unha encravada.\n Nosso maior diferencial é o estudo da causa, que vai do calçado inapropriados, o corte inadequado, a anatomia, alterações posturais, entre outros. O podólogo devidamente qualificado, além de associar o conhecimento da causa com a técnica exclusiva da Podologia, acompanha e orienta para que não haja recidiva.\n Para o alívio da dor utilizamos:\n • Anestésico tópico\n • Laser terapêutico\n • Eletroterapia\n • Acupuntura',
+        collapseContent: 'A onicocriptose, ou unha encravada, é frequente nos consultórios de podologia. A Podologia, com técnicas especializadas, desempenha um papel vital na prevenção e tratamento desse problema. Nosso diferencial está em identificar causas, como o uso de calçados inadequados, cortes incorretos e alterações posturais, aplicando esse conhecimento junto a técnicas exclusivas para prevenir recidivas. Para o alívio da dor, utilizamos anestésicos tópicos, laser terapêutico, eletroterapia e acupuntura.',
         collapseImages: [
             '/assets/pagina_serviços/unha_encravada/img_unha_encravada_1.svg',
             '/assets/pagina_serviços/unha_encravada/img_unha_encravada_2.svg',
@@ -71,7 +71,7 @@ const itens = [
         title: 'Calos',
         image: '/assets/pagina_serviços/calos/img_calos_2.svg',
         collapseTitle: 'Calos',
-        collapseContent: 'CalosMas, é só um calo!\n Não é só um calo, é um problema que altera o deambular, o andar, que altera a postura, causam dores, que podem evoluir para o joelho, quadril e coluna, limitando os movimentos.\n São vários os tipos de calos, com causas e tratamentos diferentes. A descoberta da causa é fundamental para sua eliminação.',
+        collapseContent: 'Mas, é só um calo!\n Não é só um calo, é um problema que altera o deambular, o andar, que altera a postura, causam dores, que podem evoluir para o joelho, quadril e coluna, limitando os movimentos.\n São vários os tipos de calos, com causas e tratamentos diferentes. A descoberta da causa é fundamental para sua eliminação.',
         collapseImages: [
             '/assets/pagina_serviços/calos/img_calos_2.svg',
             '/assets/pagina_serviços/calos/img_calos_3.svg',
@@ -133,8 +133,11 @@ const itens = [
             '/assets/pagina_serviços/orteses/img_orteses_3.svg',
         ]
     },
+];
+
+const itens2 = [
     {
-        title: 'Acupuntura Agragada à Podologia',
+        title: 'Acupuntura Agregada à Podologia',
         image: '/assets/pagina_serviços/acupuntura_agregada_a_podologia/img_acupuntura_agragada_a_podologia_2.svg',
         collapseTitle: 'Acupuntura Agragada à Podologia',
         collapseContent: 'Quando resolvemos agregar a Acupuntura à Podologia, não imaginávamos a dimensão, o leque de benefícios que nos traria esta associação. Hoje utilizamos as técnicas da Medicina Tradicional Chinesa (MTC) em vários procedimentos podológicos, como, para o alívio da dor nos tratamentos de unha encravada, remoção de calos, para a diminuição do processo inflamatório em fascite plantar e esporão de calcâneo, lesões esportivas, nas onicomicoses, para acelerar o processo de cicatrização em casos de feridas complexas.\n Por isso criamos uma página inteirinha com todas as terapias da MTC que aplicamos.',
@@ -165,110 +168,134 @@ const itens = [
     {
         title: 'Acupuntura Auricular',
         image: '/assets/pagina_serviços/acupuntura_auricular/img_acupuntura_auricular_1.svg',
-        collapseTitle: 'Podologia Geriatrica',
-        collapseContent: 'Descrição detalhada do tratamento 1.',
+        collapseTitle: 'Auricoloterapia',
+        collapseContent: 'O pavilhão auricular é um micro sistema, representando todo o sistema corporal. Através das técnicas da Medicina tradicional Chinesa é possível tratar todo o corpo com estímulos nos pontos que correspondem aos órgãos. Esta estimulação é feita com esferas de prata e ouro, sementes, agulhas...',
         collapseImages: [
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-2.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-3.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-4.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-5.png'
+            '/assets/pagina_serviços/acupuntura_auricular/img_acupuntura_auricular_1.svg',
+            '/assets/pagina_serviços/acupuntura_auricular/img_acupuntura_auricular_2.svg',
+            '/assets/pagina_serviços/acupuntura_auricular/img_acupuntura_auricular_3.svg',
         ]
     },
     {
-        title: '14',
-        image: '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-        collapseTitle: 'Podologia Geriatrica',
-        collapseContent: 'Descrição detalhada do tratamento 1.',
+        title: 'Moxaterapia',
+        image: '/assets/pagina_serviços/acupuntura_moxaterapia/img_acupuntura_moxaterapia_1.svg',
+        collapseTitle: 'Moxaterapia',
+        collapseContent: 'É uma prática terapêutica da Medicina chinesa que utiliza a Artemísia, planta Asiática, através da combustão (calor)',
         collapseImages: [
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-2.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-3.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-4.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-5.png'
+            '/assets/pagina_serviços/acupuntura_moxaterapia/img_acupuntura_moxaterapia_1.svg',
+            '/assets/pagina_serviços/acupuntura_moxaterapia/img_acupuntura_moxaterapia_2.svg',
+            '/assets/pagina_serviços/acupuntura_moxaterapia/img_acupuntura_moxaterapia_3.svg',
+            '/assets/pagina_serviços/acupuntura_moxaterapia/img_acupuntura_moxaterapia_4.svg',
         ]
     },
     {
-        title: '15',
-        image: '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-        collapseTitle: 'Podologia Geriatrica',
-        collapseContent: 'Descrição detalhada do tratamento 1.',
+        title: 'Laserterapia',
+        image: '/assets/pagina_serviços/acupuntura_laserterapia/img_acupuntura_laserterapia_1.svg',
+        collapseTitle: 'Laserterapia',
+        collapseContent: 'Terapia utilizando o laser terapêutico de baixa potência nos acupontos. A aplicação da Laserterapia potencializa os tratamentos de Acupuntura.',
         collapseImages: [
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-2.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-3.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-4.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-5.png'
+            '/assets/pagina_serviços/acupuntura_laserterapia/img_acupuntura_laserterapia_1.svg',
+            '/assets/pagina_serviços/acupuntura_laserterapia/img_acupuntura_laserterapia_2.svg'
         ]
     },
     {
-        title: '16',
-        image: '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-        collapseTitle: 'Podologia Geriatrica',
-        collapseContent: 'Descrição detalhada do tratamento 1.',
+        title: 'Eletroterapia ',
+        image: '/assets/pagina_serviços/acupuntura_eletroterapia/img_acupuntura_eletroterapia_1.svg',
+        collapseTitle: 'Eletroterapia',
+        collapseContent: 'É a aplicação da corrente elétrica para diversos fins, principalmente nos casos de dores.',
         collapseImages: [
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-2.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-3.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-4.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-5.png'
+            '/assets/pagina_serviços/acupuntura_eletroterapia/img_acupuntura_eletroterapia_1.svg',
+            '/assets/pagina_serviços/acupuntura_eletroterapia/img_acupuntura_eletroterapia_2.svg',
+            '/assets/pagina_serviços/acupuntura_eletroterapia/img_acupuntura_eletroterapia_3.svg'
         ]
     },
     {
-        title: '17',
-        image: '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-        collapseTitle: 'Podologia Geriatrica',
-        collapseContent: 'Descrição detalhada do tratamento 1.',
+        title: 'Ventosaterapia',
+        image: '/assets/pagina_serviços/acupuntura_ventosaterapia/img_acupuntura_ventosaterapia_1.svg',
+        collapseTitle: 'Ventosaterapia',
+        collapseContent: 'Outra prática muita utilizada na Medicina Chinesa, que consiste na aplicação de ventosas de vidro ou  acrílico. Sua função é liberar toxinas, melhorar a circulação do sangue, aliviar dores e tensões, descongestionando bloqueios energéticos.',
         collapseImages: [
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-2.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-3.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-4.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-5.png'
-        ]
-    },
-    {
-        title: '18',
-        image: '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-        collapseTitle: 'Podologia Geriatrica',
-        collapseContent: 'Descrição detalhada do tratamento 1.',
-        collapseImages: [
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-2.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-3.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-4.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-5.png'
+            '/assets/pagina_serviços/acupuntura_ventosaterapia/img_acupuntura_ventosaterapia_1.svg',
+            '/assets/pagina_serviços/acupuntura_ventosaterapia/img_acupuntura_ventosaterapia_1.svg',
+            '/assets/pagina_serviços/acupuntura_ventosaterapia/img_acupuntura_ventosaterapia_1.svg'
         ]
     },
 ];
 
 const breakpoints = {
-    250: {
-        slidesPerView: 1,
-        spaceBetween: 10
+    360: {
+        slidesPerView: 2,
+        spaceBetween: 24
+    },
+    400: {
+        slidesPerView: 2,
+        spaceBetween: 24
     },
     480: {
         slidesPerView: 2,
-        spaceBetween: 10
+        spaceBetween: 24
     },
     600: {
         slidesPerView: 3,
-        spaceBetween: 10
+        spaceBetween: 24
     },
     768: {
         slidesPerView: 4,
-        spaceBetween: 10
+        spaceBetween: 24
     },
     992: {
         slidesPerView: 5,
-        spaceBetween: 10
+        spaceBetween: 24
     },
     1200: {
+        slidesPerView: 5,
+        spaceBetween: 24
+    },
+    1600: {
+        slidesPerView: 6,
+        spaceBetween: 24
+    },
+    1920: {
+        slidesPerView: 6,
+        spaceBetween: 24
+    }
+};
+
+const breakpoints1 = {
+    360: {
+        slidesPerView: 2,
+        spaceBetween: 24
+    },
+    400: {
+        slidesPerView: 2,
+        spaceBetween: 24
+    },
+    480: {
+        slidesPerView: 2,
+        spaceBetween: 24
+    },
+    600: {
+        slidesPerView: 3,
+        spaceBetween: 24
+    },
+    768: {
+        slidesPerView: 4,
+        spaceBetween: 24
+    },
+    992: {
+        slidesPerView: 5,
+        spaceBetween: 24
+    },
+    1200: {
+        slidesPerView: 5,
+        spaceBetween: 24
+    },
+    1600: {
         slidesPerView: 6,
         spaceBetween: 10
     },
     1920: {
-        slidesPerView: 7,
+        slidesPerView: 6,
         spaceBetween: 10
     }
 };
@@ -278,9 +305,14 @@ const breakpoints = {
 
 export default function Serviços() {
     const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndex2, setActiveIndex2] = useState(null);
 
     const handleToggleCollapse = (index) => {
         setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+    };
+
+    const handleToggleCollapse2 = (index) => {
+        setActiveIndex2((prevIndex) => (prevIndex === index ? null : index));
     };
 
     return (
@@ -300,11 +332,11 @@ export default function Serviços() {
             {/* carrosel com colapse */}
             <div className={styles.container_carousel}>
 
-                <label>Podologia & Acupuntura</label>
+                <label>Podologia</label>
 
                 <div>
-                    <Carrossel breakpoints={breakpoints} slidesPerView={7} spaceBetween={10} arrows={true} navigators={true}>
-                        {itens.map((item, index) => (
+                    <Carrossel breakpoints={breakpoints} slidesPerView={5} spaceBetween={24} arrows={true} navigators={true}>
+                        {itens1.map((item, index) => (
                             <div key={index} className={styles.image_container}>
                                 <img
                                     src={item.image}
@@ -320,11 +352,44 @@ export default function Serviços() {
                         {activeIndex !== null && (
                             <Collapse
                                 className={styles.collapse}
-                                collapseTitle={itens[activeIndex].collapseTitle}
-                                collapseContent={itens[activeIndex].collapseContent}
-                                collapseImages={itens[activeIndex].collapseImages}
+                                collapseTitle={itens1[activeIndex].collapseTitle}
+                                collapseContent={itens1[activeIndex].collapseContent}
+                                collapseImages={itens1[activeIndex].collapseImages}
                                 isOpen={activeIndex !== null}
                                 onToggle={() => setActiveIndex(null)}
+                            />
+                        )}
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.container_carousel}>
+
+                <label>Acupuntura</label>
+
+                <div>
+                    <Carrossel breakpoints={breakpoints1} slidesPerView={7} spaceBetween={24} arrows={true} navigators={true}>
+                        {itens2.map((item, index) => (
+                            <div key={index} className={styles.image_container}>
+                                <img
+                                    src={item.image}
+                                    alt='slider'
+                                    className={`${styles.slide} ${activeIndex2 === index ? styles.active : ''}`}
+                                    onClick={() => handleToggleCollapse2(index)}
+                                />
+                                <p className={styles.image_title}>{item.title}</p>
+                            </div>
+                        ))}
+                    </Carrossel>
+                    <div className={styles.container_collapse}>
+                        {activeIndex2 !== null && (
+                            <Collapse
+                                className={styles.collapse}
+                                collapseTitle={itens2[activeIndex2].collapseTitle}
+                                collapseContent={itens2[activeIndex2].collapseContent}
+                                collapseImages={itens2[activeIndex2].collapseImages}
+                                isOpen={activeIndex2 !== null}
+                                onToggle={() => setActiveIndex2(null)}
                             />
                         )}
                     </div>
