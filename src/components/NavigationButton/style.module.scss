@@ -3,7 +3,7 @@
 
     position: absolute;
     z-index: 10;
-    width: 6rem;
+    width: 2rem;
     height: 6rem;
     background-repeat: no-repeat;
     background-size: contain;
@@ -14,10 +14,10 @@
 }
 .next_button {
     background-image: url('../../../public/assets/icons/arrow-right.png');
-    right: -1.5rem;
+    right: -0.1rem;
 }
 
 .prev_button {
     background-image: url('../../../public/assets/icons/arrow-left.png');
-    left: -1.5rem;
+    left: -0.1;
 }
