@@ -1,5 +1,6 @@
 import AboutUs from "@/pages/AboutUs";
 import Instagram from "@/pages/Instagram";
+import Aniversario from "@/pages/Aniversario";
 import Rodape from "@/pages/Rodape";
 import Serviços from "@/pages/Serviços";
 import Contato from "../pages/Contato/index";
@@ -20,6 +21,7 @@ const Home = () => {
       <Serviços/>
       <Espaco/>
       <Contato/>
+      <Aniversario/>
       <Rodape/>
     </main>
   );

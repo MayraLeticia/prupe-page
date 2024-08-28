@@ -13,6 +13,11 @@ const images = [
     '/assets/espaco/img_espaco8.png',
     '/assets/espaco/img_espaco9.png',
     '/assets/espaco/img_espaco10.png',
+    '/assets/espaco/img_espaco11.png',
+    '/assets/espaco/img_espaco12.png',
+    '/assets/espaco/img_espaco13.png',
+    '/assets/espaco/img_espaco14.png',
+    '/assets/espaco/img_espaco15.png',
 ];
 
 const Espaco = () => {
