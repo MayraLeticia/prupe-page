@@ -35,6 +35,9 @@
         position: absolute;
         bottom: 0;
         left: 0;
+
+        z-index: 2;
+
         
         img {
             width: 100%;
@@ -42,6 +45,27 @@
             
             
         }
+
+        @media (max-width: $breakpoint-medium) {
+            width: 100%;
+            height: auto;
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            z-index: 2;
+
+            
+            img {
+                width: 100%;
+                height: auto;
+                    
+                
+            }
+        }
+
+       
     }
 
     .mensagem{
@@ -61,6 +85,8 @@
 
             padding: 20vh 8vw;
 
+            height: 100%;
+
             label{
                 font-size: $font-medium;
                 font-weight: 700;
@@ -72,11 +98,37 @@
                 font-weight: 500;
                 color: $color-gray1;
             }
+
+            
         }
+
 
         img {
             width: 150px;
             height: auto;
+        }
+
+        @media (max-width: $breakpoint-medium) {
+            width: 80%;
+            height: 80vh;
+            .label{
+                background: url('/assets/aniversario/mobile-bg.svg') no-repeat center center;
+                background-size:110%;
+
+                padding: 20vh 9vw;
+
+                label{
+                    font-size: $font-small;
+                    font-weight: 700;
+                    color: $color-gray1;
+                }
+                
+                p{
+                    font-size: $font-xsmall;
+                    font-weight: 500;
+                    color: $color-gray1;
+                }
+            }
         }
     }
 }
