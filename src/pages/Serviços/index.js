@@ -168,66 +168,56 @@ const itens2 = [
     {
         title: 'Acupuntura Auricular',
         image: '/assets/pagina_serviços/acupuntura_auricular/img_acupuntura_auricular_1.svg',
-        collapseTitle: 'Podologia Geriatrica',
-        collapseContent: 'Descrição detalhada do tratamento 1.',
+        collapseTitle: 'Auricoloterapia',
+        collapseContent: 'O pavilhão auricular é um micro sistema, representando todo o sistema corporal. Através das técnicas da Medicina tradicional Chinesa é possível tratar todo o corpo com estímulos nos pontos que correspondem aos órgãos. Esta estimulação é feita com esferas de prata e ouro, sementes, agulhas...',
         collapseImages: [
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-2.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-3.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-4.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-5.png'
+            '/assets/pagina_serviços/acupuntura_auricular/img_acupuntura_auricular_1.svg',
+            '/assets/pagina_serviços/acupuntura_auricular/img_acupuntura_auricular_2.svg',
+            '/assets/pagina_serviços/acupuntura_auricular/img_acupuntura_auricular_3.svg',
         ]
     },
     {
-        title: '14',
-        image: '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-        collapseTitle: 'Podologia Geriatrica',
-        collapseContent: 'Descrição detalhada do tratamento 1.',
+        title: 'Moxaterapia',
+        image: '/assets/pagina_serviços/acupuntura_moxaterapia/img_acupuntura_moxaterapia_1.svg',
+        collapseTitle: 'Moxaterapia',
+        collapseContent: 'É uma prática terapêutica da Medicina chinesa que utiliza a Artemísia, planta Asiática, através da combustão (calor)',
         collapseImages: [
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-2.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-3.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-4.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-5.png'
+            '/assets/pagina_serviços/acupuntura_moxaterapia/img_acupuntura_moxaterapia_1.svg',
+            '/assets/pagina_serviços/acupuntura_moxaterapia/img_acupuntura_moxaterapia_2.svg',
+            '/assets/pagina_serviços/acupuntura_moxaterapia/img_acupuntura_moxaterapia_3.svg',
+            '/assets/pagina_serviços/acupuntura_moxaterapia/img_acupuntura_moxaterapia_4.svg',
         ]
     },
     {
-        title: '15',
-        image: '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-        collapseTitle: 'Podologia Geriatrica',
-        collapseContent: 'Descrição detalhada do tratamento 1.',
+        title: 'Laserterapia',
+        image: '/assets/pagina_serviços/acupuntura_laserterapia/img_acupuntura_laserterapia_1.svg',
+        collapseTitle: 'Laserterapia',
+        collapseContent: 'Terapia utilizando o laser terapêutico de baixa potência nos acupontos. A aplicação da Laserterapia potencializa os tratamentos de Acupuntura.',
         collapseImages: [
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-2.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-3.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-4.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-5.png'
+            '/assets/pagina_serviços/acupuntura_laserterapia/img_acupuntura_laserterapia_1.svg',
+            '/assets/pagina_serviços/acupuntura_laserterapia/img_acupuntura_laserterapia_2.svg'
         ]
     },
     {
-        title: '16',
-        image: '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-        collapseTitle: 'Podologia Geriatrica',
-        collapseContent: 'Descrição detalhada do tratamento 1.',
+        title: 'Eletroterapia ',
+        image: '/assets/pagina_serviços/acupuntura_eletroterapia/img_acupuntura_eletroterapia_1.svg',
+        collapseTitle: 'Eletroterapia',
+        collapseContent: 'É a aplicação da corrente elétrica para diversos fins, principalmente nos casos de dores.',
         collapseImages: [
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-2.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-3.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-4.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-5.png'
+            '/assets/pagina_serviços/acupuntura_eletroterapia/img_acupuntura_eletroterapia_1.svg',
+            '/assets/pagina_serviços/acupuntura_eletroterapia/img_acupuntura_eletroterapia_2.svg',
+            '/assets/pagina_serviços/acupuntura_eletroterapia/img_acupuntura_eletroterapia_3.svg'
         ]
     },
     {
-        title: '17',
-        image: '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-        collapseTitle: 'Podologia Geriatrica',
-        collapseContent: 'Descrição detalhada do tratamento 1.',
+        title: 'Ventosaterapia',
+        image: '/assets/pagina_serviços/acupuntura_ventosaterapia/img_acupuntura_ventosaterapia_1.svg',
+        collapseTitle: 'Ventosaterapia',
+        collapseContent: 'Outra prática muita utilizada na Medicina Chinesa, que consiste na aplicação de ventosas de vidro ou  acrílico. Sua função é liberar toxinas, melhorar a circulação do sangue, aliviar dores e tensões, descongestionando bloqueios energéticos.',
         collapseImages: [
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-1.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-2.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-3.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-4.png',
-            '/assets/pagina_serviços/podogeriatria/Prupe-Podologia-atendimentos-podogeriatria-5.png'
+            '/assets/pagina_serviços/acupuntura_ventosaterapia/img_acupuntura_ventosaterapia_1.svg',
+            '/assets/pagina_serviços/acupuntura_ventosaterapia/img_acupuntura_ventosaterapia_1.svg',
+            '/assets/pagina_serviços/acupuntura_ventosaterapia/img_acupuntura_ventosaterapia_1.svg'
         ]
     },
 ];

@@ -7,7 +7,7 @@ export const metadata = {
   title: "Prupé Podologia",
   description: "Page Prupé Podologia",
   icons: {
-    icon: "/favicon.png", // Caminho para o favicon dentro da pasta public
+    icon: "/favicon.svg",
   },
 };
 
