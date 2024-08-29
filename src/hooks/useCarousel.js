@@ -5,7 +5,7 @@ const useCarousel = () => {
     {
       name: 'Gláucia Alves',
       image: '/assets/images/glaucia.png',
-      info: 'Graduada em Podologia (universidade Anhembi Morumbi-SP), Pós graduada em Gerontologia. Pedagoga, Pós graduanda em Neuropsicopedagogia. Docente no curso de Podologia do Senac Ce. Acupunturista formada pela Associação Brasileira de Acupuntura (ABA), com aperfeiçoamento na University of Traditional Chinese Medicine, Tianjin – China e World Federativo of Acupuncture – Moxibustion Societies, Beijing – China.',
+      info: 'Graduada em Podologia (universidade Anhembi Morumbi-SP), Pós graduada em Gerontologia. Pedagoga, Graduanda em Biomedicina. Docente no curso de Podologia do Senac Ce. Acupunturista formada pela Associação Brasileira de Acupuntura (ABA), com aperfeiçoamento na University of Traditional Chinese Medicine, Tianjin – China e World Federativo of Acupuncture – Moxibustion Societies, Beijing – China.',
     },
     {
       name: 'Mazé Brandão',
