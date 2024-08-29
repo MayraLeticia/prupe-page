@@ -35,7 +35,11 @@
     }
 
     @media (max-width: $breakpoint-medium) {
-        height: 110vh;
+
+        
+        height: 800px;
+        justify-content: center;
+
 
         padding: 8vh 9%;
         
@@ -85,5 +89,7 @@
             }
         }
     }
+
+   
 
 }
