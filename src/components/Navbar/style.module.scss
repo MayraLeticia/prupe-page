@@ -22,7 +22,7 @@
   }
 
   .logo img {
-    width: 80px;
+    width: 120px;
   }
 
   .navLinks {
@@ -73,6 +73,10 @@
   }
 
   @media (max-width: 768px) {
+    .logo img {
+      width: 120px;
+    }
+
     .navLinks {
       position: absolute;
       top: 80px;
@@ -100,7 +104,12 @@
   }
 
   @media (max-width: 480px) {
+    .logo img {
+      width: 85px;
+    }
+
     .navLinks {
+
       position: absolute;
       top: 80px;
       right: 0;
