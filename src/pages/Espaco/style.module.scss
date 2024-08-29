@@ -2,8 +2,7 @@
 
 .container {
     width: 100vw;
-    height: 100vh;
-
+    min-height: 100vh;
 
     padding: 16.34vh 9%;
 
@@ -14,20 +13,16 @@
 
     background-color: $color-gray2;
 
-
-    
     label {
         font-size: $font-xlarge;
         font-weight: 700;
-
-        color: $color-gray6; 
+        color: $color-gray6;
     }
 
-    p{
+    p {
         font-size: $font-small;
         font-weight: 400;
-
-        color: $color-gray5; 
+        color: $color-gray5;
 
         strong {
             font-weight: 600;
@@ -35,23 +30,20 @@
     }
 
     @media (max-width: $breakpoint-medium) {
-        padding: 8vh 9%;
-        
+        padding: 8vh 5%;
+
         label {
             font-size: $font-large;
-            
         }
 
-        p{
+        p {
             font-size: $font-xsmall;
-        
         }
     }
 
-
     .description {
         width: 100%;
-        min-height: 45vh; //hug content
+        min-height: 45vh;
 
         display: flex;
         justify-content: space-between;
@@ -59,18 +51,46 @@
         flex-direction: row;
 
         @media (max-width: $breakpoint-large) {
-            justify-content: center;
             flex-direction: column;
             text-align: center;
+            justify-content: center;
+            align-items: center;
         }
 
         .description_story {
             width: 100%;
-            height: 100%;
+            height: auto;
+            margin: 1rem 0;
+            padding: 0 20px;
+
+            @media (max-width: $breakpoint-small) {
+                width: 100%; // celulares
+                height: 25vh !important;
+            }
+
+            @media (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
+                width: 95%; // celulares
+                height: 30vh !important;
+            }
+
+            @media (min-width: $breakpoint-medium) and (max-width: $breakpoint-large) {
+                width: 90%; // tablet e alguns celulares
+                height: 40vh !important; 
+            }
+
+            @media (min-width: $breakpoint-large) and (max-width: $breakpoint-xlarge) {
+                width: 90%; // tablet
+                height: 35vh !important;
+            }
+
+            @media (min-width: $breakpoint-xlarge) {
+                width: 100%;
+                height: 45vh !important;
+            }
+
             @media (max-width: $breakpoint-large) {
-                height: 45vh;
-                margin: 1.5rem 0;
-                padding: 0 25px;
+                height: auto;
+                padding: 0;
             }
         }
 
@@ -79,9 +99,7 @@
 
             @media (max-width: $breakpoint-large) {
                 padding-right: 0;
-                
             }
         }
     }
-
 }
