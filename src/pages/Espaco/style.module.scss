@@ -35,6 +35,8 @@
     }
 
     @media (max-width: $breakpoint-medium) {
+        height: 110vh;
+
         padding: 8vh 9%;
         
         label {
