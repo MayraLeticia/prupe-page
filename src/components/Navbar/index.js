@@ -68,12 +68,11 @@ const Navbar = () => {
       </div>
       <ul className={`${styles.navLinks} ${isOpen ? styles.open : ''}`}>
         <li><a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>Início</a></li>
-
         <li><a href="#instagram" onClick={(e) => { e.preventDefault(); scrollToSection('instagram'); }}>Instagram</a></li>
         <li><a href="#servicos" onClick={(e) => { e.preventDefault(); scrollToSection('servicos'); }}>Serviços</a></li>
         <li><a href="#espaco" onClick={(e) => { e.preventDefault(); scrollToSection('espaco'); }}>Espaço</a></li>
         <li><a href="#contato" onClick={(e) => { e.preventDefault(); scrollToSection('contato'); }}>Contato</a></li>
-
+        <li><a href="#aniversario" onClick={(e) => { e.preventDefault(); scrollToSection('aniversario'); }}>Aniversário</a></li>
         <li className={styles.closeMenu} onClick={toggleMenu}>X</li>
       </ul>
       <div className={`${styles.hamburger} ${isOpen ? styles.open : ''}`} onClick={toggleMenu}>
