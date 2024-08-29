@@ -30,7 +30,10 @@
     }
 
     @media (max-width: $breakpoint-medium) {
-        padding: 8vh 5%;
+
+        height: 110vh;
+
+        padding: 8vh 9%;
 
         label {
             font-size: $font-large;

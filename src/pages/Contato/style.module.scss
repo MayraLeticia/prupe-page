@@ -33,6 +33,7 @@
     }
 
     @media (max-width: $breakpoint-medium) {
+        height: 110vh;
         flex-direction: column;
         padding: 8vh 9%;
 
