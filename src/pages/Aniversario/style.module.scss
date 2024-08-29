@@ -69,7 +69,7 @@
         height: 100%;
 
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
 
         align-items: flex-end;
         flex-direction: column;
@@ -78,32 +78,32 @@
 
         .container_label {
             display: flex;
-            justify-content: flex-end;
-            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: auto;
             height: 100%;
-            margin-right: 300px;
+            margin-right: 10%;
+            
 
             .img_container_label {
-                margin-top: 10px;
-                height:600px;
-                width: 400px;
+                height:650px;
+                width: 850px;
                 
                 
 
                 z-index: 2;
             }
             .label {
-                width: 280px;
+                width: 500px;
                     display: flex;
                     flex-direction: column;
-                    align-items: flex-end;
-                    margin-right: 60px;
+                    align-items: center;
                     
 
-                    margin-top: 100px;
                     z-index: 2;
                     position: absolute;
-                    text-align: right;
+                    text-align: center;
 
                 label {
                     font-size: $font-medium;
