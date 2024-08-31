@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const useCarousel = () => {
   const professionals = [
@@ -28,6 +28,14 @@ const useCarousel = () => {
   const [startX, setStartX] = useState(0);
   const [endX, setEndX] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+
+  // Função para pré-carregar as imagens
+  useEffect(() => {
+    professionals.forEach((professional) => {
+      const img = new Image();
+      img.src = professional.image;
+    });
+  }, [professionals]);
 
   const nextSlide = () => {
     if (isTransitioning) return;
