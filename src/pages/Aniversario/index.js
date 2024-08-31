@@ -15,7 +15,7 @@ const Aniversario = () => {
           </picture>
           <div className={styles.label}>
             <label>São <strong>20 anos</strong> do Prupé.</label>
-            <p><i>Durante todo esse período foram muitos os desafios. Mas, continuamos acreditando que a qualidade nos nossos serviços e produtos, nos manterá em constante crescimento, sem o perder foco, que é oferecer sempre o melhor!</i>  [Glaucia Alves]</p>
+            <p><i>Durante todo esse período foram muitos os desafios. Mas, continuamos acreditando que a qualidade nos nossos serviços e produtos, nos manterá em constante crescimento, sem perder o foco, que é oferecer sempre o melhor!</i>  [Glaucia Alves]</p>
             
             <img src="/assets/logo/nova_logo.svg" alt="Logo 20 anos" className={styles.logo} />
           </div>
