@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link'; // Import do Link do Next.js
 import styles from './style.module.scss';
 
 const Navbar = () => {
@@ -8,35 +9,26 @@ const Navbar = () => {
   const [visible, setVisible] = useState(true);
   const navRef = useRef(null);
 
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
-
     const scrollDifference = Math.abs(currentScrollPos - prevScrollPos);
 
-    if (!isOpen) {  // Somente esconder a navbar se o menu não estiver aberto
+    // Somente esconder a navbar se o menu não estiver aberto
+    if (!isOpen) {
       if (scrollDifference > 20) {
         setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 20);
       }
     }
 
-
     setPrevScrollPos(currentScrollPos);
   };
 
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false);  // Fechar a navbar ao clicar em um item
-    }
-  };
-
   const handleClickOutside = (event) => {
+    // Fecha o menu se clicar fora
     if (navRef.current && !navRef.current.contains(event.target)) {
       setIsOpen(false);
     }
@@ -46,6 +38,7 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
 
     if (isOpen) {
+      // Quando o menu estiver aberto, bloqueia rolagem da página
       document.body.style.overflow = 'hidden';
       document.addEventListener('click', handleClickOutside);
     } else {
@@ -60,21 +53,50 @@ const Navbar = () => {
     };
   }, [isOpen, prevScrollPos]);
 
-
   return (
     <nav ref={navRef} className={`${styles.navbar} ${visible ? styles.visible : styles.hidden}`}>
       <div className={styles.logo}>
-        <img src="/assets/logo/nova_logo.svg" alt="Logo" />
+        {/* Exemplo: Leva para a página inicial */}
+        <Link href="/" onClick={() => setIsOpen(false)}>
+          <img src="/assets/logo/nova_logo.svg" alt="Logo" />
+        </Link>
       </div>
+
       <ul className={`${styles.navLinks} ${isOpen ? styles.open : ''}`}>
-        <li><a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>Início</a></li>
-        <li><a href="#instagram" onClick={(e) => { e.preventDefault(); scrollToSection('instagram'); }}>Instagram</a></li>
-        <li><a href="#servicos" onClick={(e) => { e.preventDefault(); scrollToSection('servicos'); }}>Serviços</a></li>
-        <li><a href="#espaco" onClick={(e) => { e.preventDefault(); scrollToSection('espaco'); }}>Espaço</a></li>
-        <li><a href="#contato" onClick={(e) => { e.preventDefault(); scrollToSection('contato'); }}>Contato</a></li>
-        <li><a href="#aniversario" onClick={(e) => { e.preventDefault(); scrollToSection('aniversario'); }}>Aniversário</a></li>
-        <li className={styles.closeMenu} onClick={toggleMenu}>X</li>
+        {/* Aqui cada Link leva a uma página distinta */}
+        <li>
+          <Link href="/" onClick={() => setIsOpen(false)}>
+            Início
+          </Link>
+        </li>
+        
+        <li>
+          <Link href="/services" onClick={() => setIsOpen(false)}>
+            Serviços
+          </Link>
+        </li>
+        <li>
+          <Link href="/space" onClick={() => setIsOpen(false)}>
+            Espaço
+          </Link>
+        </li>
+        <li>
+          <Link href="/contact" onClick={() => setIsOpen(false)}>
+            Contato
+          </Link>
+        </li>
+        <li>
+          <Link href="https://www.instagram.com/prupepodologia/" onClick={() => setIsOpen(false)}>
+            Instagram
+          </Link>
+        </li>
+        {/* Botão para fechar o menu no mobile */}
+        <li className={styles.closeMenu} onClick={toggleMenu}>
+          X
+        </li>
       </ul>
+
+      {/* Ícone do menu hamburger */}
       <div className={`${styles.hamburger} ${isOpen ? styles.open : ''}`} onClick={toggleMenu}>
         <div className={styles.bar1}></div>
         <div className={styles.bar2}></div>

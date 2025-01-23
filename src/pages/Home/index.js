@@ -4,7 +4,7 @@ import styles from './style.module.scss';
 const Home = () => {
   return (
     <header id="home" className={styles.header}>
-      <Navbar></Navbar>
+      
       <div className={styles.overlay}>
         <img src="/assets/logo/nova_logo.svg" alt="Logo" className={styles.logo} />
         <label>Podologia e Acupuntura</label>
